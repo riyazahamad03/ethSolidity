@@ -1,0 +1,47 @@
+folder : contracts
+	inbox.sol
+folder : test
+	inbox.test.js
+package.json (npm init default)
+compile.js
+deploy.js
+
+
+
+
+solc version installation:
+ npm install solc@0.4.17
+
+
+installation of some modules:
+testing framework:
+	npm install mocha ganache-cli
+web3 version:
+	npm install mocha ganache-cli web3
+
+
+
+
+
+
+mocha function:
+	run a test and make assertion --- 'it'
+	group collection of 'it' function ---- 'describe'
+	some general code setup --- 'beforeEach'
+
+implementation of mocha :
+	change the script tag in package.json to 'mocha' 
+	then  execute the following command 'npm run test'
+
+
+
+deployment to public network:
+	previously we used ganache as an provider so no need to worry of the accounts because ganache provides accounts with unlocked mnemonic
+	now, to deploy to local network we need to provide the account 
+	so that we use rinkeby test network for developmen of this project.. this takes very much time 
+	so infura api service helps to access to node on rinkeby network
+	please note that rinkeby is no longer exist we use gorli network instead
+implementation process:
+	create an new file deploy.js in same hierarchy of compile.js 
+	npm install @truffle/hdwallet-provider
+	command to run "node deploy.js"

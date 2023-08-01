@@ -1,0 +1,25 @@
+------------------------
+basic:
+
+int (int8,int16,int32)
+uint (uint8,uint16,uint32)
+string
+bool
+fixed/ufixed
+address
+--------------------------
+Arrays:
+
+fixed array
+dynamic array
+mapping
+struct
+
+--------------------------
+reference types:
+
+fixed arrays
+dynamic array
+mapping 
+struct
+----------------------------------
